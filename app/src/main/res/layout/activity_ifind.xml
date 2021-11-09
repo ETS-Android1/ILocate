@@ -27,4 +27,11 @@
         android:text="Button"
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="646dp" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="202dp"
+        tools:layout_editor_absoluteY="354dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

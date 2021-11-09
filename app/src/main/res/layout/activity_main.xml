@@ -15,4 +15,18 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/buttonilocate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="iLocateActivity" />
+
+    <Button
+        android:id="@+id/buttonifind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="iFindActivity"
+        tools:layout_editor_absoluteX="263dp"
+        tools:layout_editor_absoluteY="0dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
