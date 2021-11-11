@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button buttonilocate;
     private Button buttonifind;
+    private Button buttonMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         //setting buttons
         buttonilocate = (Button) findViewById(R.id.buttonilocate);
         buttonifind = (Button) findViewById(R.id.buttonifind);
+        buttonMap = (Button) findViewById(R.id.button7);
 
         //setting onclicklistener for ilocate button
         buttonilocate.setOnClickListener(new View.OnClickListener() {
@@ -40,6 +42,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(MainActivity.this.getBaseContext(), iFindActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        buttonMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this.getBaseContext(), MapsActivity.class);
                 startActivity(intent);
             }
         });
