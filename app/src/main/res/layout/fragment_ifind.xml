@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutiFind"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/imageButtonServiceCar2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="72dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonNearBy"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonNearBy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonNearBy"
+        app:srcCompat="@drawable/rush_white_circle"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButtonNearBy"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="73dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonMyLocations"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonMyLocations"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonServiceCar2"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonMyLocations"
+        app:srcCompat="@drawable/rush_white_circle"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMyLocations"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="27dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonNearBy"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewEarth2"
+        app:srcCompat="@drawable/rush_white_circle"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageViewEarth2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="532dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonMyLocations"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonMyLocations"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonMyLocations"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rush_white_circle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
