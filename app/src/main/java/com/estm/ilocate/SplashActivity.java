@@ -19,7 +19,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 // TODO Auto-generated method stub
-                Intent intent = new Intent(SplashActivity.this.getBaseContext(), MainActivity.class);
+                Intent intent = new Intent(SplashActivity.this.getBaseContext(), iLocateActivity.class);
                 startActivity(intent);
                 finish();
             }}, 5000);
