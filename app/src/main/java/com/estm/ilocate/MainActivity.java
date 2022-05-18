@@ -1,58 +1,69 @@
 package com.estm.ilocate;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
+import androidx.viewpager2.widget.ViewPager2;
 
-    private Button buttonilocate;
-    private Button buttonifind;
-    private Button buttonMap;
+public class MainActivity extends FragmentActivity {
+    /**
+     * The number of pages (wizard steps) to show in this demo.
+     */
+    private static final int NUM_PAGES = 5;
+
+    /**
+     * The pager widget, which handles animation and allows swiping horizontally to access previous
+     * and next wizard steps.
+     */
+    private ViewPager2 viewPager;
+
+    /**
+     * The pager adapter, which provides the pages to the view pager widget.
+     */
+    private FragmentStateAdapter pagerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        // Salam this is the first comment.
-        // In this project Inchalah we will be working on android
-        // Studio as an IDE for creating our iLocate application
 
-        //setting buttons
-        buttonilocate = (Button) findViewById(R.id.buttonilocate);
-        buttonifind = (Button) findViewById(R.id.buttonifind);
-        buttonMap = (Button) findViewById(R.id.button7);
+        // Instantiate a ViewPager2 and a PagerAdapter.
+        viewPager = findViewById(R.id.pager);
+        pagerAdapter = new ScreenSlidePagerAdapter(this);
+        viewPager.setAdapter(pagerAdapter);
+    }
 
-        //setting onclicklistener for ilocate button
-        buttonilocate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+    @Override
+    public void onBackPressed() {
+        if (viewPager.getCurrentItem() == 0) {
+            // If the user is currently looking at the first step, allow the system to handle the
+            // Back button. This calls finish() on this activity and pops the back stack.
+            super.onBackPressed();
+        } else {
+            // Otherwise, select the previous step.
+            viewPager.setCurrentItem(viewPager.getCurrentItem() - 1);
+        }
+    }
 
-                Intent intent = new Intent(MainActivity.this.getBaseContext(), iLocateActivity.class);
-                startActivity(intent);
-            }
-        });
+    /**
+     * A simple pager adapter that represents 5 ScreenSlidePageFragment objects, in
+     * sequence.
+     */
+    private class ScreenSlidePagerAdapter extends FragmentStateAdapter {
+        public ScreenSlidePagerAdapter(FragmentActivity fa) {
+            super(fa);
+        }
 
-        //setting onclicklistener for ifind button
-        buttonifind.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        @Override
+        public Fragment createFragment(int position) {
+            return new ScreenSlidePageFragment();
+        }
 
-                Intent intent = new Intent(MainActivity.this.getBaseContext(), iFindActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        buttonMap.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this.getBaseContext(),  MapsActivity.class);
-                startActivity(intent);
-            }
-        });
-
+        @Override
+        public int getItemCount() {
+            return NUM_PAGES;
+        }
     }
 }
