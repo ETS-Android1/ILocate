@@ -1,11 +1,13 @@
 package com.estm.ilocate;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,28 +22,33 @@ public class iLocateFragment extends Fragment {
     private ImageButton buttonServiceCar;
     private ConstraintLayout constraintLayoutiLocate;
 
-    public iLocateFragment() {
-        super(R.layout.fragment_ilocate);
-    }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_ilocate,
+        Log.d("ILOCATEFRAGMENT","onCreateView accessed");
+        return inflater.inflate(R.layout.fragment_ilocate,
                 container,false);
-        constraintLayoutiLocate=(ConstraintLayout) rootView.
-                findViewById(R.id.constraintLayoutiLocate);
-        earth =(ImageView)rootView.findViewById(R.id.imageViewEarth);
-        buttonSettings=(ImageButton)rootView.findViewById(R.id.imageButtonSettings);
-        buttonLocate=(ImageButton)rootView.findViewById(R.id.imageButtonLocate);
-        buttonSearch=(ImageButton)rootView.findViewById(R.id.imageButtonSearch);
-        buttonServiceCar=(ImageButton)rootView.findViewById(R.id.imageButtonServiceCar);
-
-        return rootView;
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        Log.d("ILOCATEFRAGMENT","onViewCreated accessed");
+        constraintLayoutiLocate=(ConstraintLayout) view.
+                findViewById(R.id.constraintLayoutiLocate);
+        earth =(ImageView)view.findViewById(R.id.imageViewEarth);
+        buttonSettings=(ImageButton)view.findViewById(R.id.imageButtonSettings);
+        buttonLocate=(ImageButton)view.findViewById(R.id.imageButtonLocate);
+        buttonSearch=(ImageButton)view.findViewById(R.id.imageButtonSearch);
+        buttonServiceCar=(ImageButton)view.findViewById(R.id.imageButtonServiceCar);
+
+        buttonSettings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(), "button locate clicked",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
 }

@@ -2,6 +2,7 @@ package com.estm.ilocate;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.ImageButton;
 
@@ -99,8 +100,10 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
 
         @Override
         public Fragment createFragment(int position) {
+            Log.d("MAINACTIVITY","createFragment accessed");
             switch (position){
                 case 0:
+                    Log.d("MAINACTIVITY","case 0 accessed");
                     return new iLocateFragment();
                 case 1:
                     return new iFindFragment();
