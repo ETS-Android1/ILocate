@@ -1,4 +1,4 @@
-package com.estm.ilocate;
+package com.fpk.ilocate;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

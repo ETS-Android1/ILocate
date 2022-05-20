@@ -1,4 +1,4 @@
-package com.estm.ilocate;
+package com.fpk.ilocate;
 
 import androidx.appcompat.app.AppCompatActivity;
 

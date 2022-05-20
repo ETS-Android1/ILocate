@@ -1,4 +1,4 @@
-package com.estm.ilocate;
+package com.fpk.ilocate;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.estm.ilocate", appContext.getPackageName());
+        assertEquals("com.fpk.ilocate", appContext.getPackageName());
     }
 }

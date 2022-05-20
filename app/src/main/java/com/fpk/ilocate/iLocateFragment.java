@@ -1,4 +1,4 @@
-package com.estm.ilocate;
+package com.fpk.ilocate;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -45,7 +45,7 @@ public class iLocateFragment extends Fragment {
         buttonSettings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getContext(), "button locate clicked",
+                Toast.makeText(getContext(), "button settings clicked",
                         Toast.LENGTH_SHORT).show();
             }
         });
