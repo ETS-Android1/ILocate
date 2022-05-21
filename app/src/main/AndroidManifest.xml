@@ -37,8 +37,8 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
+        <activity android:name=".MainActivity"/>
 
-        <activity android:name="com.fpk.ilocate.MainActivity" />
     </application>
 
 </manifest>
