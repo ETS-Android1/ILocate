@@ -11,12 +11,11 @@
         android:layout_width="78dp"
         android:layout_height="78dp"
         android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
         android:scaleType="centerInside"
         android:src="@drawable/rush_white_circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.975"
         app:srcCompat="@drawable/rush_white_circle"
         tools:ignore="SpeakableTextPresentCheck" />
 
@@ -24,47 +23,38 @@
         android:id="@+id/imageButtonSearch"
         android:layout_width="78dp"
         android:layout_height="78dp"
-        android:layout_marginStart="69dp"
-        android:layout_marginTop="637dp"
-        android:layout_marginEnd="73dp"
         android:layout_marginBottom="16dp"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButtonServiceCar"
-        app:layout_constraintStart_toEndOf="@+id/imageButtonLocate"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/rush_white_circle"
         android:src="@drawable/rush_white_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rush_white_circle"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/imageButtonServiceCar"
         android:layout_width="78dp"
         android:layout_height="78dp"
-        android:layout_marginTop="537dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:scaleType="centerInside"
+        android:src="@drawable/rush_white_circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonSettings"
         app:srcCompat="@drawable/rush_white_circle"
-        android:src="@drawable/rush_white_circle"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
         android:id="@+id/imageViewEarth"
         android:layout_width="78dp"
         android:layout_height="78dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.057"
+        android:src="@drawable/rush_white_circle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/rush_white_circle"
-        android:src="@drawable/rush_white_circle"
-        />
+        app:srcCompat="@drawable/rush_white_circle" />
 
     <ImageButton
         android:id="@+id/imageButtonSettings"
@@ -73,10 +63,10 @@
         android:layout_marginTop="22dp"
         android:layout_marginEnd="16dp"
         android:scaleType="centerInside"
+        android:src="@drawable/rush_white_circle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/rush_white_circle"
-        android:src="@drawable/rush_white_circle"
         tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

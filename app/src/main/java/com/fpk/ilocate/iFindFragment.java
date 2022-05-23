@@ -26,19 +26,36 @@ public class iFindFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_ifind,container,
+        return inflater.inflate(R.layout.fragment_ifind,container,
                 false);
-        constraintLayoutiFind=(ConstraintLayout)rootView.findViewById(R.id.constraintLayoutiFind);
-        earth2=(ImageView)rootView.findViewById(R.id.imageViewEarth2);
-        buttonServiceCar2=(ImageButton) rootView.findViewById(R.id.imageButtonServiceCar2);
-        buttonNearBy=(ImageButton)rootView.findViewById(R.id.imageButtonNearBy);
-        buttonMyLocations=(ImageButton)rootView.findViewById(R.id.imageButtonMyLocations);
-
-        return (ViewGroup) inflater.inflate(
-                R.layout.fragment_ifind, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState); }
+        super.onViewCreated(view, savedInstanceState);
+
+        constraintLayoutiFind=(ConstraintLayout)view.findViewById(R.id.constraintLayoutiFind);
+        earth2=(ImageView)view.findViewById(R.id.imageViewEarth2);
+        buttonServiceCar2=(ImageButton) view.findViewById(R.id.imageButtonServiceCar2);
+        buttonNearBy=(ImageButton)view.findViewById(R.id.imageButtonNearBy);
+        buttonMyLocations=(ImageButton)view.findViewById(R.id.imageButtonMyLocations);
+        buttonServiceCar2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+        buttonNearBy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+        buttonMyLocations.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+    }
 }
