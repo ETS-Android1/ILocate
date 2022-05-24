@@ -5,6 +5,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -16,10 +17,10 @@ import androidx.fragment.app.Fragment;
 
 public class iLocateFragment extends Fragment {
     private ImageView earth;
-    private ImageButton buttonSettings;
-    private ImageButton buttonLocate;
-    private ImageButton buttonSearch;
-    private ImageButton buttonServiceCar;
+    private Button buttonSettings;
+    private Button buttonLocate;
+    private Button buttonSearch;
+    private Button buttonServiceCar;
     private ConstraintLayout constraintLayoutiLocate;
 
     @Override
@@ -37,10 +38,10 @@ public class iLocateFragment extends Fragment {
         constraintLayoutiLocate=(ConstraintLayout) view.
                 findViewById(R.id.constraintLayoutiLocate);
         earth =(ImageView)view.findViewById(R.id.imageViewEarth);
-        buttonSettings=(ImageButton)view.findViewById(R.id.imageButtonSettings);
-        buttonLocate=(ImageButton)view.findViewById(R.id.imageButtonLocate);
-        buttonSearch=(ImageButton)view.findViewById(R.id.imageButtonSearch);
-        buttonServiceCar=(ImageButton)view.findViewById(R.id.imageButtonServiceCar);
+        buttonSettings=(Button)view.findViewById(R.id.imageButtonSettings);
+        buttonLocate=(Button)view.findViewById(R.id.imageButtonLocate);
+        buttonSearch=(Button)view.findViewById(R.id.imageButtonSearch);
+        buttonServiceCar=(Button)view.findViewById(R.id.imageButtonServiceCar);
 
         buttonSettings.setOnClickListener(new View.OnClickListener() {
             @Override
