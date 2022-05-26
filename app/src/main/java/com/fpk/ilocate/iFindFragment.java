@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
@@ -34,7 +33,7 @@ public class iFindFragment extends Fragment {
 
         constraintLayoutiFind=(ConstraintLayout)view.findViewById(R.id.constraintLayoutiFind);
         earth2=(ImageView)view.findViewById(R.id.imageViewEarth2);
-        buttonServiceCar2=(Button) view.findViewById(R.id.imageButtonServiceCar2);
+        buttonServiceCar2=(Button) view.findViewById(R.id.imageButtonFindCar);
         buttonNearBy=(Button)view.findViewById(R.id.imageButtonNearBy);
         buttonMyLocations=(Button)view.findViewById(R.id.imageButtonMyLocations);
         buttonServiceCar2.setOnClickListener(new View.OnClickListener() {

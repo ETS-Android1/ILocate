@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/imageButtonServiceCar2"
+        android:id="@+id/imageButtonFindCar"
         android:layout_width="78dp"
         android:layout_height="78dp"
         android:scaleType="centerInside"
@@ -18,7 +18,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.975"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        android:text="FC"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
 
     <Button
         android:id="@+id/imageButtonNearBy"
@@ -32,7 +36,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.975"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        android:text="NB"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
 
     <Button
         android:id="@+id/imageButtonMyLocations"
@@ -46,7 +54,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.975"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        android:text="ML"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
 
     <ImageView
         android:id="@+id/imageViewEarth2"

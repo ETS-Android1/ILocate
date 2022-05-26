@@ -18,7 +18,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.975"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        android:text="L"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
 
     <Button
         android:id="@+id/imageButtonSearch"
@@ -32,7 +36,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.975"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        android:text="S"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
 
     <Button
         android:id="@+id/imageButtonServiceCar"
@@ -46,7 +54,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.975"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        android:text="SC"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
 
     <ImageView
         android:id="@+id/imageViewEarth"
@@ -72,6 +84,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.024"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        android:text="ST"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

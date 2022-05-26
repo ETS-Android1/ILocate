@@ -50,6 +50,14 @@ public class iLocateFragment extends Fragment {
                         Toast.LENGTH_SHORT).show();
             }
         });
+        buttonLocate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(), "button Locate clicked",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
+
 
     }
 }
